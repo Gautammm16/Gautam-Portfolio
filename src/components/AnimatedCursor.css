@@ -1,0 +1,38 @@
+/* Reset default cursor */
+body {
+    cursor: none; /* Hide the default cursor */
+  }
+  
+  .cursor {
+    position: fixed; /* Fixed positioning to follow the cursor within the viewport */
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: lightblue;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: transform 0.1s ease-out, background 0.2s ease-out; /* Smooth transition for transform and background */
+  }
+  
+  .cursor.hovered {
+    background: lightblue;
+    transform: scale(6.2);
+  }
+  
+  .circle {
+    position: fixed; /* Fixed positioning to follow the cursor within the viewport */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    pointer-events: none;
+    transition: transform 0.2s cubic-bezier(0, 0.5, 0.5, 1), background 0.2s cubic-bezier(0, 0.5, 0.5, 1), border-color 0.2s cubic-bezier(0, 0.5, 0.5, 1); /* Smooth transition for transform, background, and border-color */
+    z-index: 999; /* Ensure it's above other content but below the cursor */
+  }
+  
+  .circle.hovered {
+    background: rgba(0, 0, 0, 0.4);
+    transform: scale(1.5);
+  }
+  

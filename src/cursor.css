@@ -1,0 +1,41 @@
+/* Reset default cursor */
+body {
+  cursor: default;
+}
+
+.cursor {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background: lightblue;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9;
+  transition: transform 0.5s ease, background 0.5s ease; /* Smooth transition for transform and background */
+}
+
+.cursor.hovered {
+  background: lightblue;
+  transform: scale(6.2);
+}
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  pointer-events: none;
+  transition: transform 0.2s cubic-bezier(0, 0.5, 0.5, 1), background 0.2s cubic-bezier(0, 0.5, 0.5, 1), border-color 0.2s cubic-bezier(0, 0.5, 0.5, 1); /* Smooth transition for transform, background, and border-color */
+  z-index: 0;
+}
+
+.circle.hovered {
+  background: rgba(0, 0, 0, 0.4);
+  transform: scale(1.5);
+}

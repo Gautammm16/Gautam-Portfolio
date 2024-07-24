@@ -9,6 +9,7 @@ import food from "../../Assets/Projects/food.png";
 
 function Projects() {
   return (
+    <section id="projects">
     <Container fluid className="project-section">
       <Particle />
       <Container>
@@ -66,6 +67,7 @@ function Projects() {
         </Row>
       </Container>
     </Container>
+    </section>
   );
 }
 
