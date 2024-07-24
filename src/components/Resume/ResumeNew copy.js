@@ -24,7 +24,7 @@ function ResumeNew() {
   }, []);
 
   // Direct path if PDF is in the public folder
-  const pdfPath = "/RESUME.pdf";
+  const pdfPath = "/Gautam.pdf";
 
   return (
     <section id="resume">
