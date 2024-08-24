@@ -26,6 +26,8 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
+    
+
       <Container>
         <Navbar.Brand  className="d-flex">
           <h1 className="img-fluid logo" alt="brand" style={{ color: "#c770f0" }} >GJ</h1>

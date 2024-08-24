@@ -11,6 +11,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AnimatedCursor from "./components/AnimatedCursor.js";
 
+
 function App() {
   const [load, upadateLoad] = useState(true);
 
@@ -32,6 +33,7 @@ function App() {
       <Projects />
       <Resume />
       <Footer />
+     
     </div>
   );
 }
