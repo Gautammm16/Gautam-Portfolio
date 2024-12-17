@@ -6,6 +6,7 @@ import pricee from "../../Assets/Projects/Pricee.png";
 import Streaming from "../../Assets/Projects/Streaming.png";
 import pizzahub from "../../Assets/Projects/pizzahub.png";
 import food from "../../Assets/Projects/food.png";
+import flixtar from "../../Assets/Projects/flixtar.png";
 
 function Projects() {
   return (
@@ -20,6 +21,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={flixtar}
+              isBlog={false}
+              title="Flixtar"
+              description=" Flixtar is a media and marketing agency focused on helping clients boost their social media presence organically, empowering them to reach new heights."
+              // ghLink="https://www.flixtar.in/"
+              demoLink="https://www.flixtar.in/"
+            />
+          </Col>
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={pricee}
